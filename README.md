@@ -39,7 +39,7 @@ This SQL file updates the `hospital-db` by adding Role-Based Access Control (RBA
 
 
 ### 8. `update2.py`
-This Python script connects to the Neon database and applies `update2.sql`, ensuring that the new `roles` and `users` tables are created.
+This Python script connects to the Postgres database and applies `update2.sql`, ensuring that the new `roles` and `users` tables are created.
 
 #### Script Workflow:
 - Connects to the PostgreSQL database using credentials from `.env`
