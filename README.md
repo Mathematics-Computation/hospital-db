@@ -34,6 +34,22 @@ This project demonstrates a PostgreSQL-based hospital database system with schem
 - Prints all columns for each table.
 - Useful for debugging and schema validation.
 
+### 7. `update2.sql`
+This SQL file updates the `hospital-db` by adding Role-Based Access Control (RBAC) tables: `roles` and `users`. These tables help manage access levels within the system.
+
+
+### 8. `update2.py`
+This Python script connects to the Neon database and applies `update2.sql`, ensuring that the new `roles` and `users` tables are created.
+
+#### Script Workflow:
+- Connects to the PostgreSQL database using credentials from `.env`
+- Reads `update2.sql` and executes the SQL commands
+- Confirms the successful execution
+
+
+
+
+
 ## Running the Project
 1. Ensure PostgreSQL is running and accessible.
 2. Create and configure the `.env` file with `DATABASE_URL`.
